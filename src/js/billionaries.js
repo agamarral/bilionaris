@@ -47,7 +47,7 @@ function mapClick(country) {
         idx = 0;
         for (var year in bpc) {
             // change the column
-            if (idx >= 13) {
+            if (idx == 15) {
                 out +='</div> <div class="col">'
             }
             bpc[year].map((countryObj) => {
