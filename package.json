@@ -1,0 +1,31 @@
+{
+  "name": "Billionaires",
+  "version": "1.0.0",
+  "description": "PAC 3 Visualització de dades",
+  "main": "gulpfile.js",
+  "author": "Amaya Gamarra.",
+  "scripts": {
+    "start": "ws --spa ./index.html"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-pngquant": "^7.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4"
+  ],
+  "dependencies": {
+    "d3-request": "^1.0.6",
+    "scrollmagic": "^2.0.8"
+  }
+}
