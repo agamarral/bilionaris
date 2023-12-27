@@ -44,10 +44,10 @@ function mapClick(country) {
         out += '<br><br>Recompte de billionaris a ' + nation.name + ':<br><br>';
         out += '</div></div><div class="row"><div class="col">'
 
+        idx = 0;
         for (var year in bpc) {
-
             // change the column
-            if (year == "2012") {
+            if (idx >= 13) {
                 out +='</div> <div class="col">'
             }
             bpc[year].map((countryObj) => {
@@ -55,7 +55,7 @@ function mapClick(country) {
                     out += '<p> Any '+ year + ' # bilionaris = ' + countryObj.qty +'</p>'
                 }
             });
-
+            idx+=1;
         }
         out += '</div></div>'
         document.getElementById("info").innerHTML = out;
@@ -109,6 +109,16 @@ function loadLollipop(tagName) {
     .attr("class", "myYaxis")
     .style("stroke",'#009698')
     .style("font-size", "20px");
+
+    svg.append("text")
+    .attr("class", "y label")
+    .attr("text-anchor", "end")
+    .attr("y", 6)
+    .attr("dy", ".75em")
+    .style("stroke",'#009698')
+    .style("font-size", "20px")
+    .attr("transform", "rotate(-90)")
+    .text("Nombre d'indústries");
 
     return { svg, x, xAxis, y, yAxis };
 

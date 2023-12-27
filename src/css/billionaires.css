@@ -243,27 +243,32 @@ pre {
   border-top-left-radius: 3px;
   /*display: none !important;*/
 }
+#map-slider {
+
+  display: block !important;
+}
 
 #map-date {
+  width: 0;
   display:none;
-
-  
 }
 #myDate {
-  color: #009698 !important;
   border-style: double;
   border-color: #009698;
 }
+.blue-h1 {
+  border-top-left-radius: 3px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #009698 !important;
+}
 .h1 {
   border-top-left-radius: 3px;
-  text-align: center !important;
   font-size: 50px;
   color: #ff4500 !important;
   font-weight: 900;
   text-orientation: mixed;
-  /*text-orientation: upright;
-  text-orientation: sideways-right;
-  text-orientation: sideways;*/
+
 }
 .h2 {
   border-top-left-radius: 3px;
@@ -272,9 +277,6 @@ pre {
   color: #ff4500 !important;
   font-weight: 900;
   text-orientation: mixed;
-  /*text-orientation: upright;
-  text-orientation: sideways-right;
-  text-orientation: sideways;*/
 }
 #map-controls button {
   margin-top: 5px !important;
