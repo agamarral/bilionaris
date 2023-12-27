@@ -1060,6 +1060,9 @@ var svgWorldMap = (function() {
 
     // 'Tick'-logic for time per speed
     function increaseTimeTicks() {
+        if (maxDates == -1) {
+            maxDates = timeData.length-1;
+        }
         ticks++;
         if (speed == 1 || (ticks % speed) == 1) {
             if (currDate < maxDates || maxDates == false) {
